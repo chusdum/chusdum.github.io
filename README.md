@@ -1,2 +1,2 @@
-# https-chusdum.github.io
+chusdum.github.io
 pagina test
