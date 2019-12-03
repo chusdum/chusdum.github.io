@@ -49,13 +49,49 @@
         ul
         {
             list-style: none;
-            
+            margin-bottom: 60px; 
         }
+
         a
         {
             color: white;
         }
         a:hover{color: rgb(74, 144, 209);}
+
+        /* css animation */
+        .avatar
+        {
+            border-radius: 50%;
+            border: 5px solid white;
+
+            animation: rot 1.5s;
+
+        }
+
+        /* @keyframes - stari/cadre ale unei animatii */
+
+            @keyframes rot {
+                from{transform: translateX(-10000px) rotate(0deg);}
+                to{transform: translateX(-0px)rotate(3600deg)}
+            }
+        .call  
+        {
+            background-color:blue;
+            color: white;
+            border-radius:30px;
+            padding: 30px;
+        }
+        @keyframes pulse
+        {
+            from{background-color: blue;}
+            to {background-color: blueviolet;}
+        }
+
+        .call
+        {
+            animation: pulse 0.25s 5;
+            animation-delay: 1.5s;
+        }
     </style>
 
 </head>
@@ -63,7 +99,7 @@
 
     <main id="content">
         <div class="col_left">
-            <img src="images/avatar.png" alt="Hustiuc Andrei" width="250">
+            <img class="avatar" src="images/avatar.png" alt="Hustiuc Andrei" width="250">
             <h2 >Hustiuc A.</h2>
             <h3>HTML/CSS Beginer</h3>
         </div>
@@ -71,9 +107,17 @@
             <h2 class="no-border">My Projects</h2>
             <ul>
                 <li><a href="https://github.com/chusdum/Homework">Homework</a></li>
-                <li><a href="">SearchBar with CSS</a></li>
-                <li><a href="">Smile in CSS</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-1">Lesson-1</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-2">Lesson-2</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-3">Lesson-3</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-4">Lesson-4</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-5-Forms">Lesson-5-Forms</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-6-CSS">Lesson-6-CSS</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-7-CSS-Global-Styles">Lesson-7-CSS-Global-Styles</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-8">Lesson-8</a></li>
+                <li><a href="https://github.com/chusdum/Lesson-9-PseudoSelector">Lesson-9-PseudoSelector</a></li>
             </ul>
+            <p><a class="call" href="tel:+123456789">Call me! 123-456-789</a></p>
         </div>
     </main>
     
@@ -84,4 +128,5 @@
 <!-- 
     https://getavataaars.com/ 
     pentru ce folosim tag-ul main?
+    atom keymap
 -->
