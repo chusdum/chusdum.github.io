@@ -7,6 +7,7 @@ de jucat cu pagina
 ```
 
 <h1>Conectarea la GitHub</h1>
+
 1.  intram pe git-scm.com si downloadam soft-ul
 2.  In VSCode -> CTRL+~ -> scrim "git" pentru a controla daca s-a pornit
 3.  Pe GitHub creem un repositoriu ex."test-git"
